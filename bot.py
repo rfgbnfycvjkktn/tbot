@@ -13,7 +13,7 @@ bot = telebot.TeleBot(config.TOKEN)
 
 @bot.message_handler(commands=["start", "help"])
 def start_command(message):
-    bot.send_message(message.chat.id, 'Тест!!!')
+    bot.send_message(message.chat.id, 'Тест!!!!')
     # bot.reply_to(message, "Howdy, how are you doing?")
 
 # @bot.message_handler(commands=['start', 'help'])
