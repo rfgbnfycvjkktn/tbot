@@ -5,22 +5,26 @@ import pytz
 import json
 import traceback
 
-#P_TIMEZONE = pytz.timezone(config.TIMEZONE)
-#TIMEZONE_COMMON_NAME = config.TIMEZONE_COMMON_NAME
+# P_TIMEZONE = pytz.timezone(config.TIMEZONE)
+# TIMEZONE_COMMON_NAME = config.TIMEZONE_COMMON_NAME
 
 bot = telebot.TeleBot(config.TOKEN)
-#bot.polling(none_stop=True)
+
+
+# bot.polling(none_stop=True)
 
 @bot.message_handler(commands=["start", "help"])
 def start_command(message):
     bot.send_message(message.chat.id, 'Тест!!!!')
-    # bot.reply_to(message, "Howdy, how are you doing?")
+
+
+bot.polling()
+
+# bot.reply_to(message, "Howdy, how are you doing?")
 
 # @bot.message_handler(commands=['start', 'help'])
 # def send_welcome(message):
 #     bot.reply_to(message, "Howdy, how are you doing?")
-
-bot.polling(none_stop=True)
 
 
 # import telebot
