@@ -42,14 +42,14 @@ def callback_inline(call):
                                                      'рекомендация к инвестированию, покупке, продаже какого-либо '
                                                      'актива, торговых операций по финансовым инструментам.')
 
-    user = users.User()
-    data = {'ID': call.from_user.id,
-            'Name': call.from_user.first_name,
-            'access': False,
-            'reg_date': datetime.datetime.today().replace(microsecond=0),
-            'sub_start_date': None,
-            'sub_end_date': None}
-    user.add(data)
+    # user = users.User()
+    # data = {'ID': call.from_user.id,
+    #         'Name': call.from_user.first_name,
+    #         'access': False,
+    #         'reg_date': datetime.datetime.today().replace(microsecond=0),
+    #         'sub_start_date': None,
+    #         'sub_end_date': None}
+    # user.add(data)
 
     # print(user.Name)
 
