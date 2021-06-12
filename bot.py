@@ -71,14 +71,14 @@ def start_command(message):
                                                      'рекомендация к инвестированию, покупке, продаже какого-либо '
                                                      'актива, торговых операций по финансовым инструментам.')
 
-    # user = users.User()
-    # data = {'ID': message.from_user.id,
-    #         'Name': message.from_user.first_name,
-    #         'access': False,
-    #         'reg_date': datetime.datetime.today().replace(microsecond=0),
-    #         'sub_start_date': None,
-    #         'sub_end_date': None}
-    # user.add(data)
+    user = users.User()
+    data = {'ID': message.from_user.id,
+            'Name': message.from_user.first_name,
+            'access': False,
+            'reg_date': datetime.datetime.today().replace(microsecond=0),
+            'sub_start_date': None,
+            'sub_end_date': None}
+    user.add(data)
 
 
 # страница помощи обработка команды
