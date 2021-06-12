@@ -33,6 +33,3 @@ class User:
         else:
             print('Юзер уже есть')
 
-    def getUserByID(self, ID):
-        print('Поиск юзера')
-
