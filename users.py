@@ -1,7 +1,9 @@
 from pymongo import MongoClient
 
-# sa 3UDyea6vZQpNYjV
-client = MongoClient('mongodb+srv://sa:3UDyea6vZQpNYjV@cluster0.arvgb.mongodb.net/tbot?retryWrites=true&w=majority')
+import os
+
+MONGODB_URI = os.getenv("MONGODB_URI")
+client = MongoClient(MONGODB_URI)
 
 # Connect to the test db
 db = client.tbot
