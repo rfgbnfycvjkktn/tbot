@@ -51,8 +51,6 @@ def callback_inline(call):
             'sub_end_date': None}
     user.add(data)
 
-    print(user.Name)
-
 
 # стартовая страница через коллбек
 @bot.message_handler(commands=["start"])
