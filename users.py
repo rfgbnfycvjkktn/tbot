@@ -35,3 +35,4 @@ class User:
 
     def getUserByID(self, ID):
         print('Поиск юзера')
+
